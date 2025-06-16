@@ -12,69 +12,64 @@
       background: linear-gradient(135deg, #00BBD4, #0A1F44);
       color: white;
       line-height: 1.6;
+      text-align: center;
     }
     header {
       display: flex;
       align-items: center;
-      padding: 1.5rem 2rem;
-      justify-content: flex-start;
-      gap: 1.5rem;
-      text-align: left;
+      justify-content: center;
+      padding: 2rem 1rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      flex-direction: column;
     }
     header img {
-      max-width: 160px;
+      max-width: 80%;
+      max-height: 120px;
+      height: auto;
     }
-    header h1 {
-      font-size: 2.2rem;
-      margin: 0;
-    }
-    header p {
-      font-style: italic;
-      color: #FFFBEA;
-      margin-top: 0.25rem;
-      font-size: 1rem;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      background: rgba(255, 255, 255, 0.05);
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background: rgba(255, 255, 255, 0.3);
-    }
-    section {
-      max-width: 1000px;
+    .content {
+      max-width: 90%;
       margin: auto;
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
-    section h2 {
+    h1 {
+      font-size: 2rem;
       margin-bottom: 1rem;
       color: #FFFBEA;
     }
-    .tab {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      margin-bottom: 2rem;
-      border-radius: 10px;
+    p {
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 1.5rem;
+    }
+    .highlight {
+      color: #FFFBEA;
+      font-weight: 600;
     }
     footer {
       text-align: center;
-      padding: 2rem;
-
+      padding: 2rem 1rem;
       background: rgba(0, 0, 0, 0.3);
       color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    /* Tablet & larger */
+    @media (min-width: 600px) {
+      header img {
+        max-width: 200px;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+      .content {
+        max-width: 700px;
+      }
     }
   </style>
   <link rel="stylesheet" href="theme.css" />
@@ -82,34 +77,20 @@
 <body>
   <header class="hero-header" style="background-image: url('assets/header-index.png');">
     <img src="assets/logo.png" alt="BeeCon Logo">
-    <div>
-      <h1>Home</h1>
-    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="expertise.html">Expertise</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <section id="intro">
-    <div class="tab">
-      <h2>Welcome to BeeCon.tech</h2>
-      <p>We are a tech consultancy specializing in AI, Data Management, Digital Transformation, and Intelligent Automation. With over 30 global projects delivered, we help clients harness the power of modern technology to create value and drive growth.</p>
-    </div>
-  </section>
-
-  <section id="news">
-    <div class="tab">
-      <h2>Latest Initiatives</h2>
-      <p>We're currently partnering with clients across the Middle East and Europe to deploy AI-powered chatbots, build centralized data lakes, and create automated analytics workflows using AWS and Power BI.</p>
-    </div>
-  </section>
+  <div class="content">
+    <h1>We're Launching Soon!</h1>
+    <p>
+      <span class="highlight">BeeCon.tech</span> is building the future of <strong>AI, Data, and Systems Integration</strong>.<br>
+      From intelligent automation to digital transformation, our solutions simplify complexity and deliver clarity.
+    </p>
+    <p>Our full experience is coming online shortly. Get ready for smarter tech.</p>
+    <p><em>Dubai | India | Australia | Europe</em></p>
+  </div>
 
   <footer>
-    Located in Silicon Oasis, Dubai • +971 505285648 • Email: m.farooq.h@outlook.com
+    Located in Silicon Oasis, Dubai • +971 505285648 • Email: farooq'@'beecon.tech
   </footer>
 </body>
 </html>
