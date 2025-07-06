@@ -760,3 +760,62 @@ img {
     margin: 3px 0;
   }
 }
+
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding: 0 1rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .nav-toggle {
+    display: flex !important;
+  }
+
+  .nav-menu {
+    font-size: 1rem;
+  }
+
+  .service-card {
+    margin: 0 10px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+}
