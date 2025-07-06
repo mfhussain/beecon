@@ -639,7 +639,7 @@ html {
 
 
 
-/* Responsive adjustments for mobile and tablets */
+/* Cleaned for mobile responsiveness */
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -696,5 +696,67 @@ html {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+/* Ensure no horizontal scroll on mobile */
+html, body {
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+/* Force container and image scaling */
+.container, .hero-content {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure hero section stacks vertically on small screens */
+@media (max-width: 768px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background: #1a3b47;
+    margin: 3px 0;
   }
 }

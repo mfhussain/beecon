@@ -92,56 +92,12 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-document.addEventListener('DOMContentLoaded', () => {
-    // Observe stat numbers
-    document.querySelectorAll('.stat-number').forEach(stat => {
-        observer.observe(stat);
-    });
-    
-    // Observe service cards
+// Observe service cards
     document.querySelectorAll('.service-card').forEach(card => {
         observer.observe(card);
     });
 });
 
-// Form submission handling
-document.querySelector('.contact-form form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(this);
-    const name = this.querySelector('input[type="text"]').value;
-    const email = this.querySelector('input[type="email"]').value;
-    const subject = this.querySelector('input[type="text"]:nth-of-type(2)').value;
-    const message = this.querySelector('textarea').value;
-    
-    // Simple validation
-    if (!name || !email || !subject || !message) {
-        alert('Please fill in all fields.');
-        return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
-    
-    // Simulate form submission
-    const submitBtn = this.querySelector('.submit-btn');
-    const originalText = submitBtn.textContent;
-    
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-    
-    setTimeout(() => {
-        alert('Thank you for your message! We will get back to you soon.');
-        this.reset();
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-    }, 1500);
-});
 
 // Add hover effects to client items
 document.querySelectorAll('.client-item').forEach(item => {
@@ -220,3 +176,15 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navToggle = document.querySelector(".nav-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  }
+});

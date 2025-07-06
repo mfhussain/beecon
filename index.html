@@ -40,7 +40,7 @@
       </a>
      </li>
     </ul>
-    <div class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active');">
+    <div class="nav-toggle" >
      <span class="bar">
      </span>
      <span class="bar">
@@ -513,7 +513,7 @@
       <div class="form-group">
        <textarea id="whatsapp-message" placeholder="Your Message" required="" rows="5"></textarea>
       </div>
-      <button class="submit-btn" onclick="sendWhatsApp()">
+      <button class="submit-btn" >
        Send via WhatsApp
       </button>
      </div>
@@ -596,5 +596,20 @@
     window.open(url, "_blank");
   }
   </script>
- </body>
+ 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  } else {
+    console.warn('Nav toggle or menu not found');
+  }
+});
+</script>
+
+</body>
 </html>
