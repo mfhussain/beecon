@@ -67,6 +67,11 @@ body {
 .nav-link:hover {
     color: #e85a4f;
 }
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 70px;
+  }
+}
 
 .nav-link::after {
     content: ";;
@@ -818,10 +823,4 @@ img {
   .stat-label {
     font-size: 0.9rem;
   }
-}
-@media (max-width: 768px) {
-  .hero {
-    padding-top: 70px;
-  }
-}
 
