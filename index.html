@@ -1,351 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeeCon Consulting - Clarity from Complexity</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <!--<img src="images/logo.png" alt="BeeCon Consulting - Clarity from Complexity" class="logo-img">-->
-				<img src="images/logo.png" alt="BeeCon Consulting - Clarity from Complexity" class="logo-img" style="height: 80px;">
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">BeeCon Consulting</h1>
-                <p class="hero-description">
-                    Transforming your data into actionable insights with cutting-edge AI solutions, 
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   BeeCon Consulting - Clarity from Complexity
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+   <div class="nav-container">
+    <div class="nav-logo">
+     <!--<img src="images/logo.png" alt="BeeCon Consulting - Clarity from Complexity" class="logo-img">-->
+     <img alt="BeeCon Consulting - Clarity from Complexity" class="logo-img" src="images/logo.png" style="height: 80px;"/>
+    </div>
+    <ul class="nav-menu">
+     <li class="nav-item">
+      <a class="nav-link" href="#home">
+       Home
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#services">
+       Services
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#projects">
+       Team
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <div class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active');">
+     <span class="bar">
+     </span>
+     <span class="bar">
+     </span>
+     <span class="bar">
+     </span>
+    </div>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+   <div class="hero-container">
+    <div class="hero-content">
+     <h1 class="hero-title">
+      BeeCon Consulting
+     </h1>
+     <p class="hero-description">
+      Transforming your data into actionable insights with cutting-edge AI solutions, 
                     comprehensive analytics and digital transformation strategies.
-                </p>
-                <a href="#contact" class="cta-button">Get Started</a>
-            </div>
-            <div class="hero-visual">
-                <div class="lighthouse-beam"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">Comprehensive solutions for your digital transformation journey</p>
-            
-            <div class="services-grid">
-                <!-- AI & Data Solutions -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/ai_data_solutions_1.png" alt="AI & Data Solutions">
-                    </div>
-                    <div class="service-content">
-                        <h3>AI & Data Solutions</h3>
-                        <p>Making data consumable and structured for effective AI implementation</p>
-                        <ul class="service-list">
-                            <li>Master Data Management (MDM)</li>
-                            <li>Data Quality, Cleansing & Consolidation</li>
-                            <li>Data Governance Frameworks</li>
-                            <li>Data Monetization Strategy</li>
-                            <li>Data Privacy & Compliance (GDPR-ready advisory)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- BI, Dashboards & Analytics -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/bi-dash1.png" alt="BI, Dashboards & Analytics">
-                    </div>
-                    <div class="service-content">
-                        <h3>BI, Dashboards & Analytics</h3>
-                        <p>Power BI, Qlik, Google Looker Studio, SAP BI, Tableau, Cognos</p>
-                        <ul class="service-list">
-                            <li>Financial Performance Planning & Reporting, CPM</li>
-                            <li>Custom Dashboards for HR, Sales, Editorial, ITIL</li>
-                            <li>Predictive & Prescriptive Analytics</li>
-                            <li>Multi-source Integration & Visualization</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- AI & Intelligent Automation -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/ai-auto1.png" alt="AI & Intelligent Automation">
-                    </div>
-                    <div class="service-content">
-                        <h3>AI & Intelligent Automation</h3>
-                        <p>Transforming Legacy systems and Data to enable AI deployments</p>
-                        <ul class="service-list">
-                            <li>Chatbots for Customer Service, Bidding and Internal Q&A</li>
-                            <li>NLP and Text Analytics for Document Extraction</li>
-                            <li>Custom AI models for Enterprise GPT, Forecasting, Segmentation</li>
-                            <li>Workflow Automation with AI</li>
-                            <li>AI Assisted BoQs and Estimations in Construction</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Digital Transformation & Integration -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/digital_transformation_1.png" alt="Digital Transformation">
-                    </div>
-                    <div class="service-content">
-                        <h3>Digital Transformation & Integration</h3>
-                        <p>Legacy System Modernization and Cloud Solutions</p>
-                        <ul class="service-list">
-                            <li>Cloud Data Lakes & Data Warehousing (AWS, Azure, GCP)</li>
-                            <li>Enterprise Integration</li>
-                            <li>Application Integration for ERP, CRM, HR and Finance</li>
-                        </ul>
-                    </div>
-                </div>
-				
-				<!-- Cyber Security Operations -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/soc3.jpg" alt="CSOC Operations">
-                    </div>
-                    <div class="service-content">
-                        <h3>Cyber Security Operations</h3>
-                        <p>Detailed Transformational Approach</p>
-                        <ul class="service-list">
-                            <li>CSOC Operations</li>
-                            <li>Vulnerability Assessment & Penetration Testing (VA / PT)</li>
-                            <li>Analysis & Reporting</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Web & Application Development -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/web_app_dev_1.png" alt="Web & Application Development">
-                    </div>
-                    <div class="service-content">
-                        <h3>Web & Application Development</h3>
-                        <p>Business, eCommerce Websites and Portals</p>
-                        <ul class="service-list">
-                            <li>AI-Powered Mobile Applications</li>
-                            <li>Custom Web Portals</li>
-                            <li>E-commerce Solutions</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Staff Augmentation -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/staff_augmentation_1.webp" alt="Staff Augmentation">
-                    </div>
-                    <div class="service-content">
-                        <h3>Staff Augmentation</h3>
-                        <p>Skilled professionals to enhance your team capabilities</p>
-                        <ul class="service-list">
-                            <li>AI/ML Specialists</li>
-                            <li>Data Scientists & Engineers</li>
-							<li>ERP, CRM Specialists, Project Managers</li>
-                            <li>Full-Stack & Core - C, Python, ABAP etc. Developers</li>                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number" data-target="50">0</div>
-                    <div class="stat-label">Projects Delivered</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="11">0</div>
-                    <div class="stat-label">Countries Served</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="12">0</div>
-                    <div class="stat-label">Industries</div>
-                </div>
-            </div>
-
-            <div class="clients-section">
-                <h3>Clients Served By Our Team</h3>
-					<p class="section-subtitle">Some of the top organizations served by our team with prior partner consulting firms.</p>
-
-						<div class="clients-grid">
-						  <div class="client-item">DuPont</div>
-						  <div class="client-item">GSK</div>
-						  <div class="client-item">Dr. Reddy's</div>
-						  <div class="client-item">Nestle</div>
-						  <div class="client-item">Telstra</div>
-						  <div class="client-item">TRW</div>
-						  <div class="client-item">FONA Gruppen</div>
-						  <div class="client-item">Toyota</div>
-						  <div class="client-item">Ford</div>
-						  <div class="client-item">BankAm</div>
-						  <div class="client-item">British Airways</div>
-						  <div class="client-item">Queensland Rail</div>
-						  <div class="client-item">Lockheed Martin</div>
-						  <div class="client-item">Walmart</div>
-						  <div class="client-item">Sony</div>
-						  <div class="client-item">Gulf News</div>
-						</div>
-
-            </div>
-
-            <div class="geographies-section">
-                <h3>Geographies Covered</h3>
-                <ul class="geography-list">
-                    <li>USA</li>
-                    <li>United Kingdom</li>
-                    <li>Denmark</li>
-                    <li>Switzerland</li>
-                    <li>Germany</li>
-                    <li>Australia</li>
-                    <li>Japan</li>
-                    <li>India</li>
-                    <li>UAE</li>
-                    <li>Thailand</li>
-                    <li>South Africa</li>
-                </ul>
-            </div>
-
-            <div class="industries-section">
-                <h3>Industries                <ul class="industry-list">
-                    <li>Telecom</li>
-                    <li>Airlines</li>
-                    <li>Pharma</li>
-                    <li>FMCG</li>
-                    <li>Retail</li>
-                    <li>Media</li>
-                    <li>Engineering</li>
-                    <li>Manufacturing</li>
-                    <li>Automotive</li>
-                    <li>Public Sector</li>
-					<li>Consulting & Advisory</li>
-                    <li>Quantitative / Qualitative Research</li>
-                    <li>Financial Services</li>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="section-subtitle">We'd love to discuss your project or answer any questions you may have.</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Silicon Oasis, Dubai, UAE</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>farooq'@'beecon.tech</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <div>
-                            <h4>Domain</h4>
-                            <p>beecon.tech</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <div class="form-group">
-						<input type="text" id="whatsapp-name" placeholder="Your Name" required>
-					</div>
-				<div class="form-group">
-						<input type="text" id="whatsapp-subject" placeholder="Subject" required>
-				</div>
-				<div class="form-group">
-						<textarea id="whatsapp-message" placeholder="Your Message" rows="5" required></textarea>
-				</div>
-				<button class="submit-btn" onclick="sendWhatsApp()">Send via WhatsApp</button>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>BeeCon Consulting</h3>
-                    <p>Clarity from Complexity</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li>AI & Data Solutions</li>
-                        <li>BI & Analytics</li>
-                        <li>Digital Transformation</li>
-						<li>Cyber Security</li>
-                        <li>Web Development</li>
-						<li>Staffing</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Silicon Oasis, Dubai, UAE</p>
-                    <p>farooq'@'beecon.tech</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 BeeCon Consulting. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-<script>
-  function sendWhatsApp() {
+     </p>
+     <a class="cta-button" href="#contact">
+      Get Started
+     </a>
+    </div>
+    <div class="hero-visual">
+     <div class="lighthouse-beam">
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Services Section -->
+  <section class="services" id="services">
+   <div class="container">
+    <h2 class="section-title">
+     Our Services
+    </h2>
+    <p class="section-subtitle">
+     Comprehensive solutions for your digital transformation journey
+    </p>
+    <div class="services-grid">
+     <!-- AI & Data Solutions -->
+     <div class="service-card">
+      <div class="service-image">
+       <img alt="AI &amp; Data Solutions" src="images/ai_data_solutions_1.png"/>
+      </div>
+      <div class="service-content">
+       <h3>
+        AI &amp; Data Solutions
+       </h3>
+       <p>
+        Making data consumable and structured for effective AI implementation
+       </p>
+       <ul class="service-list">
+        <li>
+         Master Data Management (MDM)
+        </li>
+        <li>
+         Data Quality, Cleansing &amp; Consolidation
+        </li>
+        <li>
+         Data Governance Frameworks
+        </li>
+        <li>
+         Data Monetization Strategy
+        </li>
+        <li>
+         Data Privacy &amp; Compliance (GDPR-ready advisory)
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- BI, Dashboards & Analytics -->
+     <div class="service-card">
+      <div class="service-image">
+       <img alt="BI, Dashboards &amp; Analytics" src="images/bi-dash1.png"/>
+      </div>
+      <div class="service-content">
+       <h3>
+        BI, Dashboards &amp; Analytics
+       </h3>
+       <p>
+        Power BI, Qlik, Google Looker Studio, SAP BI, Tableau, Cognos
+       </p>
+       <ul class="service-list">
+        <li>
+         Financial Performance Planning &amp; Reporting, CPM
+        </li>
+        <li>
+         Custom Dashboards for HR, Sales, Editorial, ITIL
+        </li>
+        <li>
+         Predictive &amp; Prescriptive Analytics
+        </li>
+        <li>
+         Multi-source Integration &amp; Visualization
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- AI & Intelligent Automation -->
+     <div class="service-card">
+      <div class="service-image">
+       <img alt="AI &amp; Intelligent Automation" src="images/ai-auto1.png"/>
+      </div>
+      <div class="service-content">
+       <h3>
+        AI &amp; Intelligent Automation
+       </h3>
+       <p>
+        Transforming Legacy systems and Data to enable AI deployments
+       </p>
+       <ul class="service-list">
+        <li>
+         Chatbots for Customer Service, Bidding and Internal Q&amp;A
+        </li>
+        <li>
+         NLP and Text Analytics for Document Extraction
+        </li>
+        <li>
+         Custom AI models for Enterprise GPT, Forecasting, Segmentation
+        </li>
+        <li>
+         Workflow Automation with AI
+        </li>
+        <li>
+         AI Assisted BoQs and Estimations in Construction
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- Digital Transformation & Integration -->
+     <div class="service-card">
+      <div class="service-image">
+       <img alt="Digital Transformation" src="images/digital_transformation_1.png"/>
+      </div>
+      <div class="service-content">
+       <h3>
+        Digital Transformation &amp; Integration
+       </h3>
+       <p>
+        Legacy System Modernization and Cloud Solutions
+       </p>
+       <ul class="service-list">
+        <li>
+         Cloud Data Lakes &amp; Data Warehousing (AWS, Azure, GCP)
+        </li>
+        <li>
+         Enterprise Integration
+        </li>
+        <li>
+         Application Integration for ERP, CRM, HR and Finance
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- Cyber Security Operations -->
+     <div class="service-card">
+      <div class="service-image">
+       <img alt="CSOC Operations" src="images/soc3.jpg"/>
+      </div>
+      <div class="service-content">
+       <h3>
+        Cyber Security Operations
+       </h3>
+       <p>
+        Detailed Transformational Approach
+       </p>
+       <ul class="service-list">
+        <li>
+         CSOC Operations
+        </li>
+        <li>
+         Vulnerability Assessment &amp; Penetration Testing (VA / PT)
+        </li>
+        <li>
+         Analysis &amp; Reporting
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- Web & Application Development -->
+     <div class="service-card">
+      <div class="service-image">
+       <img alt="Web &amp; Application Development" src="images/web_app_dev_1.png"/>
+      </div>
+      <div class="service-content">
+       <h3>
+        Web &amp; Application Development
+       </h3>
+       <p>
+        Business, eCommerce Websites and Portals
+       </p>
+       <ul class="service-list">
+        <li>
+         AI-Powered Mobile Applications
+        </li>
+        <li>
+         Custom Web Portals
+        </li>
+        <li>
+         E-commerce Solutions
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- Staff Augmentation -->
+     <div class="service-card">
+      <div class="service-image">
+       <img alt="Staff Augmentation" src="images/staff_augmentation_1.webp"/>
+      </div>
+      <div class="service-content">
+       <h3>
+        Staff Augmentation
+       </h3>
+       <p>
+        Skilled professionals to enhance your team capabilities
+       </p>
+       <ul class="service-list">
+        <li>
+         AI/ML Specialists
+        </li>
+        <li>
+         Data Scientists &amp; Engineers
+        </li>
+        <li>
+         ERP, CRM Specialists, Project Managers
+        </li>
+        <li>
+         Full-Stack &amp; Core - C, Python, ABAP etc. Developers
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+   <div class="container">
+    <h2 class="section-title">
+     About Us
+    </h2>
+    <div class="stats-grid">
+     <div class="stat-card">
+      <div class="stat-number" data-target="50">
+       0
+      </div>
+      <div class="stat-label">
+       Projects Delivered
+      </div>
+     </div>
+     <div class="stat-card">
+      <div class="stat-number" data-target="11">
+       0
+      </div>
+      <div class="stat-label">
+       Countries Served
+      </div>
+     </div>
+     <div class="stat-card">
+      <div class="stat-number" data-target="12">
+       0
+      </div>
+      <div class="stat-label">
+       Industries
+      </div>
+     </div>
+    </div>
+    <div class="clients-section">
+     <h3>
+      Clients Served By Our Team
+     </h3>
+     <p class="section-subtitle">
+      Some of the top organizations served by our team with prior partner consulting firms.
+     </p>
+     <div class="clients-grid">
+      <div class="client-item">
+       DuPont
+      </div>
+      <div class="client-item">
+       GSK
+      </div>
+      <div class="client-item">
+       Dr. Reddy's
+      </div>
+      <div class="client-item">
+       Nestle
+      </div>
+      <div class="client-item">
+       Telstra
+      </div>
+      <div class="client-item">
+       TRW
+      </div>
+      <div class="client-item">
+       FONA Gruppen
+      </div>
+      <div class="client-item">
+       Toyota
+      </div>
+      <div class="client-item">
+       Ford
+      </div>
+      <div class="client-item">
+       BankAm
+      </div>
+      <div class="client-item">
+       British Airways
+      </div>
+      <div class="client-item">
+       Queensland Rail
+      </div>
+      <div class="client-item">
+       Lockheed Martin
+      </div>
+      <div class="client-item">
+       Walmart
+      </div>
+      <div class="client-item">
+       Sony
+      </div>
+      <div class="client-item">
+       Gulf News
+      </div>
+     </div>
+    </div>
+    <div class="geographies-section">
+     <h3>
+      Geographies Covered
+     </h3>
+     <ul class="geography-list">
+      <li>
+       USA
+      </li>
+      <li>
+       United Kingdom
+      </li>
+      <li>
+       Denmark
+      </li>
+      <li>
+       Switzerland
+      </li>
+      <li>
+       Germany
+      </li>
+      <li>
+       Australia
+      </li>
+      <li>
+       Japan
+      </li>
+      <li>
+       India
+      </li>
+      <li>
+       UAE
+      </li>
+      <li>
+       Thailand
+      </li>
+      <li>
+       South Africa
+      </li>
+     </ul>
+    </div>
+    <div class="industries-section">
+     <h3>
+      Industries
+      <ul class="industry-list">
+       <li>
+        Telecom
+       </li>
+       <li>
+        Airlines
+       </li>
+       <li>
+        Pharma
+       </li>
+       <li>
+        FMCG
+       </li>
+       <li>
+        Retail
+       </li>
+       <li>
+        Media
+       </li>
+       <li>
+        Engineering
+       </li>
+       <li>
+        Manufacturing
+       </li>
+       <li>
+        Automotive
+       </li>
+       <li>
+        Public Sector
+       </li>
+       <li>
+        Consulting &amp; Advisory
+       </li>
+       <li>
+        Quantitative / Qualitative Research
+       </li>
+       <li>
+        Financial Services
+       </li>
+      </ul>
+     </h3>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+   <div class="container">
+    <h2 class="section-title">
+     Let's Connect
+    </h2>
+    <p class="section-subtitle">
+     We'd love to discuss your project or answer any questions you may have.
+    </p>
+    <div class="contact-content">
+     <div class="contact-info">
+      <div class="contact-item">
+       <i class="fas fa-map-marker-alt">
+       </i>
+       <div>
+        <h4>
+         Location
+        </h4>
+        <p>
+         Silicon Oasis, Dubai, UAE
+        </p>
+       </div>
+      </div>
+      <div class="contact-item">
+       <i class="fas fa-envelope">
+       </i>
+       <div>
+        <h4>
+         Email
+        </h4>
+        <p>
+         farooq'@'beecon.tech
+        </p>
+       </div>
+      </div>
+      <div class="contact-item">
+       <i class="fas fa-globe">
+       </i>
+       <div>
+        <h4>
+         Domain
+        </h4>
+        <p>
+         beecon.tech
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="contact-form">
+      <div class="form-group">
+       <input id="whatsapp-name" placeholder="Your Name" required="" type="text"/>
+      </div>
+      <div class="form-group">
+       <input id="whatsapp-subject" placeholder="Subject" required="" type="text"/>
+      </div>
+      <div class="form-group">
+       <textarea id="whatsapp-message" placeholder="Your Message" required="" rows="5"></textarea>
+      </div>
+      <button class="submit-btn" onclick="sendWhatsApp()">
+       Send via WhatsApp
+      </button>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+   <div class="container">
+    <div class="footer-content">
+     <div class="footer-section">
+      <h3>
+       BeeCon Consulting
+      </h3>
+      <p>
+       Clarity from Complexity
+      </p>
+     </div>
+     <div class="footer-section">
+      <h4>
+       Services
+      </h4>
+      <ul>
+       <li>
+        AI &amp; Data Solutions
+       </li>
+       <li>
+        BI &amp; Analytics
+       </li>
+       <li>
+        Digital Transformation
+       </li>
+       <li>
+        Cyber Security
+       </li>
+       <li>
+        Web Development
+       </li>
+       <li>
+        Staffing
+       </li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h4>
+       Contact
+      </h4>
+      <p>
+       Silicon Oasis, Dubai, UAE
+      </p>
+      <p>
+       farooq'@'beecon.tech
+      </p>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <p>
+      &copy; 2025 BeeCon Consulting. All rights reserved.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+  <script>
+   function sendWhatsApp() {
     const name = document.getElementById("whatsapp-name").value.trim();
     const subject = document.getElementById("whatsapp-subject").value.trim();
     const message = document.getElementById("whatsapp-message").value.trim();
@@ -361,8 +595,6 @@
 
     window.open(url, "_blank");
   }
-</script>
-	
-</body>
+  </script>
+ </body>
 </html>
-
