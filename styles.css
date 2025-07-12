@@ -280,8 +280,13 @@ body {
     font-weight: 500;
 }
 
-.service-list {
+/*.service-list {
     list-style: none;
+}
+*/
+.service-list {
+    max-height: none !important;
+    overflow: visible !important;
 }
 
 .service-list li {
